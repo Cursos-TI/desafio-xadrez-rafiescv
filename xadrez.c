@@ -5,8 +5,9 @@ int main() {
 
     //Peças do jogo
     int torre = 5; 
-    int bispo = 5; int passoBispo = 0;
+    int bispo = 5;  int passoBispo = 0;
     int rainha = 8; int passoRainha = 0; 
+    int cavalo = 1; int passoVCavalo = 0;
 
     //Movimento da Torre: A Torre se move em linha reta 
     printf("Movimento Torre:\n");
@@ -30,11 +31,22 @@ int main() {
         printf("8 casas para a esquerda\n");
         passoRainha++;
     } while (rainha < passoRainha);
+
+    //Movimento do Cavalo: O Cavalo se movimenta em L
+    printf("Movimento do Cavalo:\n");
+    for (int i = 1; i <= cavalo; i++)
+    {
+        passoVCavalo = 0;
+
+        while (passoVCavalo < 2) 
+        {
+          printf("Baixo\n");
+          passoVCavalo++;
+        }
+        printf("Esquerda\n");
+
+    }
     
-
-    
-
-
 
 
     return 0;
